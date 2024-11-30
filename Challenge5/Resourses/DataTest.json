@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1000,
+        "account": "hau",
+        "password": "123"
+    },
+ {
+     "id": 1001,
+     "account": "hiep",
+     "password": "123"
+ },
+ {
+     "id": 1002,
+     "account": "ho",
+     "password": "123"
+ },
+ 
+ ]
