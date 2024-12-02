@@ -33,7 +33,7 @@ struct SettingView: View {
                         title: Text("Logout"),
                         message: Text("Are you sure you want to log out?"),
                         primaryButton: .destructive(Text("Logout")) {
-                            appState.setIsLoginSuccess(isLoginSuccess: false)
+                            appState.logout(isLoginSuccess: false)
                         },
                         secondaryButton: .cancel()
                     )
@@ -42,10 +42,6 @@ struct SettingView: View {
                 Spacer()
             }
             .padding(.horizontal)
-            .navigationDestination(isPresented: .constant(!appState.getIsLoginSuccess())) {
-                LoginView()
-                    .environmentObject(appState)
-            }
         }
     }
 }

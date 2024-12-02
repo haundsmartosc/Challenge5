@@ -5,7 +5,7 @@ struct Challenge5App: App {
     @StateObject private var appState = AppState()
     var body: some Scene {
         WindowGroup {
-            if appState.getIsLoginSuccess() {
+            if appState.isLoginSuccess {
                 TabViewCustom()
                     .environmentObject(appState)
             } else {

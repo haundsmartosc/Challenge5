@@ -16,7 +16,7 @@ struct HomeView: View {
                     savedBackgroundColor
                         .ignoresSafeArea()
                     VStack {
-                        if let user = appState.getUser() {
+                        if let user = appState.user {
                             Text("Welcome, \(user.account)")
                                 .font(.headline)
                         } else {
