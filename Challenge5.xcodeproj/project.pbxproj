@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D502E9692CFD5AB50043516F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D502E9682CFD5AB50043516F /* HomeView.swift */; };
 		D5778EE72CF9A08600A869ED /* TabViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5778EE62CF9A08600A869ED /* TabViewCustom.swift */; };
 		D5778EE92CF9B70700A869ED /* DetailHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5778EE82CF9B70700A869ED /* DetailHomeView.swift */; };
 		D5778EEB2CF9C9FF00A869ED /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5778EEA2CF9C9FF00A869ED /* ListView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D502E9682CFD5AB50043516F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D5778EE62CF9A08600A869ED /* TabViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewCustom.swift; sourceTree = "<group>"; };
 		D5778EE82CF9B70700A869ED /* DetailHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHomeView.swift; sourceTree = "<group>"; };
 		D5778EEA2CF9C9FF00A869ED /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				D5778EE82CF9B70700A869ED /* DetailHomeView.swift */,
 				D5778EEA2CF9C9FF00A869ED /* ListView.swift */,
 				D5778EEC2CF9D3DD00A869ED /* SettingView.swift */,
+				D502E9682CFD5AB50043516F /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D502E9692CFD5AB50043516F /* HomeView.swift in Sources */,
 				D5778EEB2CF9C9FF00A869ED /* ListView.swift in Sources */,
 				D5778EE92CF9B70700A869ED /* DetailHomeView.swift in Sources */,
 				D5D47B292CF966A800F5ADF4 /* Challenge5App.swift in Sources */,

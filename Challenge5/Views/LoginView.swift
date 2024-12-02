@@ -11,15 +11,14 @@ struct LoginView: View {
     func checkLogin () {
         for user in users {
             if user.account == acccount && user.password == password {
-                appState.user = user
-                appState.isLoginSuccess = true
+                appState.saveLogin(isLoginSuccess: true, user: user)
                 loginError = false
                 return
             }
         }
         loginError = true
     }
-
+    
     var body: some View {
         VStack {
             Text("Login")
@@ -54,7 +53,7 @@ struct LoginView: View {
                         .foregroundColor(.red)
                         .font(.subheadline)
                 }
-
+                
                 Button(action: {
                     checkLogin()
                 }) {
@@ -68,15 +67,8 @@ struct LoginView: View {
                 }
             }
             .padding(.horizontal)
-
+            
             Spacer()
-
-            if appState.isLoginSuccess {
-                NavigationLink(destination: TabViewCustom()) {
-                    EmptyView()
-                }
-                .hidden()
-            }
         }
         .navigationBarHidden(true)
     }
